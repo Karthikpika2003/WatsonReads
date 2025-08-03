@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WatsonReads</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+  <div class="navbar-top">
+  <span class="logo">📚 WatsonReads 📚</span>
+
+  <div class="nav-right">
+    <!-- Social media icons -->
+    <a href="https://twitter.com" target="_blank" class="social-icon"><i class='bx bxl-twitter'></i></a>
+    <a href="https://instagram.com" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+    <a href="https://facebook.com" target="_blank" class="social-icon"><i class='bx bxl-facebook'></i></a>
+
+    <!-- Language + Login -->
+    <button class="lang-btn">EN | हिंदी</button>
+    <button class="login-btn">Login</button>
+  </div>
+</div>
+
+
+  <div class="navbar-bottom">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Genres</a></li>
+      <li><a href="#">Authors</a></li>
+      <li><a href="#">Manga</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Community</a></li>
+    </ul>
+
+    <div class="nav-search">
+      <input type="text" placeholder="Search books...">
+      <button><i class='bx bx-search'></i></button>
+    </div>
+  </div>
+</nav>
+
+
+  <div style="margin-top: 80px; padding: 20px;">
+    <h1>Welcome to WatsonReads</h1>
+    <p>Find your next favorite book, manga, or novel here!</p>
+  </div>
+<section class="carousel-section">
+  <h2>Trending Books</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn left" onclick="scrollCarousel(-1)">&#10094;</button>
+    <div class="carousel-track" id="carouselTrack">
+      <!-- Book cards -->
+    <div class="book-container">
+  <!-- 1. Dan Da Dan -->
+      <div class="book-card">
+    <img src="assets\Cover1.jpg" alt="DAN DA DAN" class="cover" />
+    <div class="hover-preview">
+      <h3>DAN DA DAN</h3>
+      <div class="badges">
+        <span class="rating">⭐ 4.7</span>
+        <span class="tag">📗 Manga</span>
+        <span class="tag">🔞 16+</span>
+      </div>
+      <p class="desc">A chaotic supernatural adventure with aliens, curses, and teenage love triangles.</p>
+      <div class="meta">
+        <p><strong>Author:</strong> Yukinobu Tatsu</p>
+        <p><strong>Published:</strong> 2021</p>
+        <p><strong>Status:</strong> Ongoing</p>
+        <p><strong>Genres:</strong> Action, Comedy, Sci-Fi, Supernatural</p>
+      </div>
+      <div class="cta">
+        <button class="read-btn">📖 Read Now</button>
+        <button class="add-btn">➕ Add to List</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. One Piece -->
+  <div class="book-card">
+    <img src="assets/cover2.jpg" alt="ONE PIECE" class="cover" />
+    <div class="hover-preview">
+      <h3>ONE PIECE</h3>
+      <div class="badges">
+        <span class="rating">⭐ 4.9</span>
+        <span class="tag">📗 Manga</span>
+        <span class="tag">🔞 12+</span>
+      </div>
+      <p class="desc">Luffy and the Straw Hats sail for the greatest treasure the world has ever known.</p>
+      <div class="meta">
+        <p><strong>Author:</strong> Eiichiro Oda</p>
+        <p><strong>Published:</strong> 1997</p>
+        <p><strong>Status:</strong> Ongoing</p>
+        <p><strong>Genres:</strong> Adventure, Action, Comedy</p>
+      </div>
+      <div class="cta">
+        <button class="read-btn">📖 Read Now</button>
+        <button class="add-btn">➕ Add to List</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Dune -->
+  <div class="book-card">
+    <img src="assets/Cover4.jpg" alt="DUNE" class="cover" />
+    <div class="hover-preview">
+      <h3>Dune</h3>
+      <div class="badges">
+        <span class="rating">⭐ 4.6</span>
+        <span class="tag">📘 Hardcover</span>
+        <span class="tag">🌌 Sci-Fi</span>
+      </div>
+      <p class="desc">The epic tale of spice, politics, and prophecy on the desert planet of Arrakis.</p>
+      <div class="meta">
+        <p><strong>Author:</strong> Frank Herbert</p>
+        <p><strong>Published:</strong> 1965</p>
+        <p><strong>Status:</strong> Completed</p>
+        <p><strong>Genres:</strong> Science Fiction, Adventure, Political</p>
+      </div>
+      <div class="cta">
+        <button class="read-btn">📖 Read Now</button>
+        <button class="add-btn">➕ Add to List</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Harry Potter and the Deathly Hallows -->
+  <div class="book-card">
+    <img src="assets/Cover5.jpg" alt="HARRY POTTER AND THE DEATHLY HALLOWS" class="cover" />
+    <div class="hover-preview">
+      <h3>Harry Potter and the Deathly Hallows</h3>
+      <div class="badges">
+        <span class="rating">⭐ 4.9</span>
+        <span class="tag">📗 Hardcover</span>
+        <span class="tag">🧙 Fantasy</span>
+      </div>
+      <p class="desc">The final battle between Harry and Voldemort in this epic wizarding finale.</p>
+      <div class="meta">
+        <p><strong>Author:</strong> J.K. Rowling</p>
+        <p><strong>Published:</strong> 2007</p>
+        <p><strong>Status:</strong> Completed</p>
+        <p><strong>Genres:</strong> Fantasy, Adventure, Coming-of-Age</p>
+      </div>
+      <div class="cta">
+        <button class="read-btn">📖 Read Now</button>
+        <button class="add-btn">➕ Add to List</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Oliver Twist -->
+  <div class="book-card">
+    <img src="assets/Cover6.jpg" alt="OLIVER TWIST" class="cover" />
+    <div class="hover-preview">
+      <h3>Oliver Twist</h3>
+      <div class="badges">
+        <span class="rating">⭐ 4.5</span>
+        <span class="tag">📕 Paperback</span>
+        <span class="tag">🎭 Classic</span>
+      </div>
+      <p class="desc">The harrowing tale of an orphan boy navigating crime and poverty in Victorian London.</p>
+      <div class="meta">
+        <p><strong>Author:</strong> Charles Dickens</p>
+        <p><strong>Published:</strong> 1838</p>
+        <p><strong>Status:</strong> Completed</p>
+        <p><strong>Genres:</strong> Classic, Drama, Social Commentary</p>
+      </div>
+      <div class="cta">
+        <button class="read-btn">📖 Read Now</button>
+        <button class="add-btn">➕ Add to List</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Rich Dad Poor Dad -->
+  <div class="book-card">
+    <img src="assets/cover7.jpg" alt="RICH DAD POOR DAD" class="cover" />
+    <div class="hover-preview">
+      <h3>Rich Dad Poor Dad</h3>
+      <div class="badges">
+        <span class="rating">⭐ 4.4</span>
+        <span class="tag">📘 Paperback</span>
+        <span class="tag">💰 Finance</span>
+      </div>
+      <p class="desc">Robert Kiyosaki's classic book on money management and building true wealth.</p>
+      <div class="meta">
+        <p><strong>Author:</strong> Robert Kiyosaki</p>
+        <p><strong>Published:</strong> 1997</p>
+        <p><strong>Status:</strong> Completed</p>
+        <p><strong>Genres:</strong> Business, Personal Finance, Self-Help</p>
+      </div>
+      <div class="cta">
+        <button class="read-btn">📖 Read Now</button>
+        <button class="add-btn">➕ Add to List</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    </div>
+    <button class="carousel-btn right" onclick="scrollCarousel(1)">&#10095;</button>
+  </div>
+</section>
+<section class="book-categories">
+  <div class="book-column">
+    <h3>Top Rated</h3>
+    <ul class="book-list">
+      <li>
+        <img src="assets\Cover12.jpeg" alt="Book One">
+        <div class="book-info">
+          <div class="badges">
+            <span class="badge green">⭐ 4.9</span>
+            <span class="badge blue">Fantasy</span>
+            <span class="badge gray">Novel</span>
+          </div>
+          <p>Lord of the Mysteries</p>
+        </div>
+      </li>
+      <li>
+        <img src="assets/cover2.jpg" alt="Book Two">
+        <div class="book-info">
+          <div class="badges">
+            <span class="badge green">⭐ 4.8</span>
+            <span class="badge blue">Adventure</span>
+            <span class="badge gray">Manga</span>
+          </div>
+          <p>One Piece (Color Edition)</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="book-column">
+    <h3>Most Popular</h3>
+    <ul class="book-list">
+      <li>
+        <img src="assets\Cover4.jpg" alt="Book Three">
+        <div class="book-info">
+          <div class="badges">
+            <span class="badge green">⭐ 4.7</span>
+            <span class="badge blue">Sci-Fi</span>
+            <span class="badge gray">Novel</span>
+          </div>
+          <p>Dune</p>
+        </div>
+      </li>
+      <li>
+        <img src="assets\cover22.jpeg" alt="Book Three">
+        <div class="book-info">
+          <div class="badges">
+            <span class="badge green">⭐ 4.7</span>
+            <span class="badge blue">Fantasy</span>
+            <span class="badge gray">Novel</span>
+          </div>
+          <p>The Lord of the Rings</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="book-column">
+    <h3>Editor’s Pick</h3>
+    <ul class="book-list">
+      <li>
+        <img src="assets\cover32.jpg" alt="Book Four">
+        <div class="book-info">
+          <div class="badges">
+            <span class="badge green">⭐ 4.6</span>
+            <span class="badge blue">Thriller</span>
+            <span class="badge gray">Graphic Novel</span>
+          </div>
+          <p>The Killing Joke</p>
+        </div>
+      </li>
+      <li>
+        <img src="assets\Cover42.jpg" alt="Book Four">
+        <div class="book-info">
+          <div class="badges">
+            <span class="badge green">⭐ 4.6</span>
+            <span class="badge blue">Thriller</span>
+            <span class="badge gray"> Novel</span>
+          </div>
+          <p>The Da Vinci Code</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="book-column">
+    <h3>New Releases</h3>
+    <ul class="book-list">
+      <li>
+        <img src="assets\Cover52.jpg" alt="Book Five">
+        <div class="book-info">
+          <div class="badges">
+            <span class="badge green">⭐ 4.5</span>
+            <span class="badge blue">Mystery</span>
+            <span class="badge gray">Manga</span>
+          </div>
+          <p>Detective Conan: Volume 101</p>
+        </div>
+      </li>
+      <li>
+        <img src="assets\Cover62.jpg" alt="Book Five">
+        <div class="book-info">
+          <div class="badges">
+            <span class="badge green">⭐ 4.3</span>
+            <span class="badge blue">Fantasy</span>
+            <span class="badge gray">Novel</span>
+          </div>
+          <p>Accomplice to the Villain</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+  <script>
+    function openChat() {
+      if (window.WatsonAssistantChatInstance) {
+        window.WatsonAssistantChatInstance.openWindow();
+      } else {
+        alert("Chatbot is still loading. Please wait.");
+      }
+    }
+
+    window.watsonAssistantChatOptions = {
+      integrationID: "21253493-c771-4540-8940-e78ccb8642c3",
+      region: "eu-de",
+      serviceInstanceID: "a619e0de-7975-470d-b2d9-c21e26f4bdc3",
+      onLoad: async (instance) => {
+        window.WatsonAssistantChatInstance = instance;
+        await instance.render();
+      }
+    };
+
+    setTimeout(function(){
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+              (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+              "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+ 
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:watsonreads@example.com">watsonreads@example.com</a></p>
+      <p>Phone: +91 98765 43210</p>
+    </div>
+
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <a href="https://twitter.com/" target="_blank">Twitter</a> |
+      <a href="https://instagram.com/" target="_blank">Instagram</a> |
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="footer-section legal">
+      <h3>Legal</h3>
+      <a href="#">Privacy Policy</a><br />
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 WatsonReads. Crafted with 📚 and 💙 by Karthik V Nambiar.
+  </div>
+</footer>
+</body>
+</html>
